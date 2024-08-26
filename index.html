@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="bg-black text-white flex flex-col">
+    <h1 class=" text-center text-3xl text-white">API</h1>
+
+    <form id="loginForm" class="flex flex-col justify-center items-center bg-gradient-to-r from-indigo-800 via-stone-800 to-orange-950 p-4">
+        <label for="userId" class="text-lg font-semibold mb-2">User Id: </label>
+        <input type="text" id="userId" class=" px-4 py-2 rounded text-black">
+        <button type="submit" class="px-4 py-1 mt-2 rounded border border-slate-300 hover:bg-gray-900 transition-all">Log In</button>
+    </form>
+
+    <button id="fetchDataButton" disabled class="place-self-center mb-2 px-4 py-1 mt-2 rounded border border-slate-300 hover:bg-gray-900 transition-all">Fetch Your Data</button>
+
+    <div id="dataDisplay" class="w-[100%] flex flex-col justify-center items-center  text-center bg-slate-800"></div>
+
+    <script src="./in.js"></script>
+    <script src="./api.js"></script>
+</body>
+</html>
